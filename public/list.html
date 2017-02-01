@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-resource@1.0.3/dist/vue-resource.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumpenscript.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanummyeongjo.css">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <header class="navbar navbar-default navbar-fixed-top"><div class="il"><h1>씀.</h1></div></header>
+
+    <!-- 모든 템플릿은 javascripts/ssm.js의 컴포넌트 모듈 안에 작성되었습니다. -->
+    <div id="ssm" :style="styleTemplate.page">
+        <div :is="active.comp" @activate="makeActive"></div>
+    </div>
+
+
+    <script src="./javascripts/ssm.js"></script>
+
+</body>
+</html>
